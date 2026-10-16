@@ -88,14 +88,18 @@ The program provides three modes:
 
 ---
 
-## Interactive Visualization
+## 🌐 Live Interactive Visualization (GitHub Pages)
 
-The project includes an interactive two-page visualizer built with HTML, CSS, and JavaScript:
+Experience the visualizer live directly in your browser:
 
-- **Simulation Only Page** (`visualization/index.html`) — Dedicated graph canvas, custom graph editing (add nodes, add edges, drag), BFS playback controls, FIFO queue animation, and real-time traversal output.
-- **Simulation + Learning Mode Page** (`visualization/learn.html`) — Interactive simulation combined with real-time step-by-step plain English explanations, algorithm pseudocode with live execution highlighting, complexity analysis ($O(V+E)$), and Python code reference (`bfs.py`).
+- ⚡ **[Simulation Only Page](https://karthikrajj.github.io/breadth-first-search-python/visualization/index.html)** — Dedicated graph traversal canvas, node/edge editing, FIFO queue animation, and real-time output.
+- 🎓 **[Simulation + Learning Mode Page](https://karthikrajj.github.io/breadth-first-search-python/visualization/learn.html)** — Interactive simulation combined with real-time step-by-step plain English explanations, algorithm pseudocode with live execution highlighting, complexity analysis ($O(V+E)$), and Python code reference (`bfs.py`).
 
-To view:
+👉 **Live Site**: [https://karthikrajj.github.io/breadth-first-search-python/](https://karthikrajj.github.io/breadth-first-search-python/)
+
+### Running Locally
+
+To open directly in your browser without an internet connection:
 ```bash
 # Open directly in your browser
 start visualization/index.html
