@@ -29,9 +29,9 @@
       <div class="card-title"><span class="icon">◉</span> Graph Canvas</div>
       <div class="graph-canvas-wrapper" id="graph-canvas-wrapper">
         <div class="canvas-toolbar">
-          <button class="btn btn-sm" id="btn-add-node" title="Click canvas to add node">＋ Node</button>
-          <button class="btn btn-sm" id="btn-add-edge" title="Click two nodes to connect">🔗 Edge</button>
-          <button class="btn btn-sm btn-success" id="btn-load-default">📋 Default</button>
+          <button class="btn btn-sm" id="btn-add-node" title="Click canvas to add node">+ Add Node</button>
+          <button class="btn btn-sm" id="btn-add-edge" title="Click two nodes to connect">🔗 Add Edge</button>
+          <button class="btn btn-sm btn-success" id="btn-load-default">📋 Default Graph</button>
           <button class="btn btn-sm" id="btn-random-graph">🎲 Random</button>
           <button class="btn btn-sm btn-danger" id="btn-clear-graph">✕ Clear</button>
           <div class="canvas-mode-info" id="canvas-mode-info">Mode: Drag nodes</div>
@@ -61,7 +61,7 @@
       <div class="card-title"><span class="icon">▶</span> BFS Controls</div>
       <div class="controls-grid">
         <div class="start-vertex-row">
-          <label for="start-vertex-select">Start:</label>
+          <label for="start-vertex-select">Start Vertex:</label>
           <select id="start-vertex-select"><option value="">— add nodes —</option></select>
         </div>
         <div class="controls-row">
@@ -83,6 +83,10 @@
     <!-- ── Queue ── -->
     <section class="queue-section card" id="queue-section">
       <div class="card-title"><span class="icon">📥</span> Queue (FIFO)</div>
+      <div style="display:flex; justify-content:space-between; font-size:0.68rem; color:var(--text-muted); font-weight:700; letter-spacing:0.08em; margin-bottom:0.4rem; padding:0 0.2rem;">
+        <span>FRONT</span>
+        <span>BACK</span>
+      </div>
       <div class="queue-container" id="queue-container">
         <span class="queue-empty" id="queue-empty-msg">Queue is empty</span>
       </div>
@@ -137,7 +141,7 @@
 
       <!-- Algorithm Steps & Pseudocode -->
       <section class="card algorithm-panel" id="algorithm-panel">
-        <div class="card-title"><span class="icon">📖</span> Algorithm Steps</div>
+        <div class="card-title"><span class="icon">📖</span> Algorithm Steps &amp; Pseudocode</div>
         <ol class="steps-list" id="algo-steps">
           <li id="algo-step-1">Choose a starting vertex.</li>
           <li id="algo-step-2">Mark it as visited.</li>
@@ -190,10 +194,10 @@
         </div>
         <div style="margin-top: 1rem; padding: 0.9rem; background: var(--bg-secondary); border-radius: var(--border-radius-sm); border: 1px solid var(--border-color);">
           <p style="font-size: 0.82rem; color: var(--text-secondary); line-height: 1.7;">
-            <strong style="color: var(--accent-orange);">Why O(V + E)?</strong> Each vertex is enqueued and dequeued exactly once (<em>O(V)</em>). For each vertex, we examine all its edges (<em>O(E)</em> total). Combined: <strong>O(V + E)</strong>.
+            <strong style="color: var(--accent-cyan);">Why O(V + E)?</strong> Each vertex is enqueued and dequeued exactly once (<em>O(V)</em>). For each vertex, we examine all its edges (<em>O(E)</em> total). Combined: <strong>O(V + E)</strong>.
           </p>
           <p style="font-size: 0.82rem; color: var(--text-secondary); line-height: 1.7; margin-top: 0.5rem;">
-            <strong style="color: var(--accent-orange);">Shortest paths:</strong> BFS finds the shortest path in terms of <em>number of edges</em> for unweighted graphs, because it explores vertices level by level.
+            <strong style="color: var(--accent-cyan);">Shortest paths:</strong> BFS finds the shortest path in terms of <em>number of edges</em> for unweighted graphs, because it explores vertices level by level.
           </p>
         </div>
       </section>
