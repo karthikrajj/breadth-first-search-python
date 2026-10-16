@@ -13,11 +13,11 @@
   <header class="header">
     <h1>Breadth-First Search (BFS)</h1>
     <p class="subtitle">Algorithm Steps, Learning Mode & Complexity</p>
-    <span class="badge">Java</span>
+    <span class="badge">Python</span>
 
     <nav class="page-nav">
-      <a href="index.html" class="nav-link">🔥 Visualizer</a>
-      <a href="learn.html" class="nav-link active">📖 Learn & Complexity</a>
+      <a href="index.html" class="nav-link">⚡ Simulation Only</a>
+      <a href="learn.html" class="nav-link active">🎓 Simulation + Learning Mode</a>
     </nav>
   </header>
 
@@ -197,13 +197,44 @@
           </p>
         </div>
       </section>
+
+      <!-- Python Implementation Panel -->
+      <section class="card python-panel" id="python-panel" style="grid-column: 1 / -1; margin-top: 0.5rem;">
+        <div class="card-title"><span class="icon">🐍</span> Python Implementation (<a href="https://github.com/karthikrajj/breadth-first-search-python/blob/main/bfs.py" target="_blank" style="color:var(--accent-orange);text-decoration:none;">bfs.py</a>)</div>
+        <div class="pseudocode" style="font-size: 0.85rem; line-height: 1.7;">
+<span class="keyword">from</span> collections <span class="keyword">import</span> deque
+
+<span class="keyword">def</span> <span class="function">bfs</span>(graph, start, num_vertices):
+    <span class="comment"># Initialize visited set, FIFO queue, and traversal output</span>
+    visited = <span class="function">set</span>()
+    queue = <span class="function">deque</span>()
+    traversal_order = []
+
+    <span class="comment"># Step 1 &amp; 2: Mark start visited and enqueue</span>
+    visited.<span class="function">add</span>(start)
+    queue.<span class="function">append</span>(start)
+
+    <span class="comment"># Step 3: Loop while queue is not empty (FIFO)</span>
+    <span class="keyword">while</span> queue:
+        vertex = queue.<span class="function">popleft</span>()  <span class="comment"># Dequeue front vertex</span>
+        traversal_order.<span class="function">append</span>(vertex)
+
+        <span class="comment"># Step 4: Explore unvisited neighbours level by level</span>
+        <span class="keyword">for</span> neighbour <span class="keyword">in</span> graph[vertex]:
+            <span class="keyword">if</span> neighbour <span class="keyword">not in</span> visited:
+                visited.<span class="function">add</span>(neighbour)
+                queue.<span class="function">append</span>(neighbour)  <span class="comment"># Enqueue neighbour</span>
+
+    <span class="keyword">return</span> traversal_order
+        </div>
+      </section>
     </div>
 
   </main>
 
   <!-- ===== FOOTER ===== -->
   <footer class="footer">
-    BFS Algorithm Visualizer · Java · Built with HTML, CSS & JavaScript
+    BFS Algorithm Visualizer · Python · Built with HTML, CSS & JavaScript
   </footer>
 
   <script src="script.js"></script>

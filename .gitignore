@@ -40,3 +40,7 @@ ENV/
 # OS files
 .DS_Store
 Thumbs.db
+
+# Assignment raw dump files
+input_output.txt
+sourcecode.txt

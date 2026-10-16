@@ -1,4 +1,4 @@
-﻿# Breadth-First Search (BFS) Algorithm
+# Breadth-First Search (BFS) Algorithm
 ## Python Implementation & Interactive Visualizer
 
 ---
@@ -92,8 +92,8 @@ The program provides three modes:
 
 The project includes an interactive two-page visualizer built with HTML, CSS, and JavaScript:
 
-- **Visualizer Page** (`visualization/index.html`) — Graph canvas, BFS controls, FIFO queue animation, and traversal output.
-- **Learning Page** (`visualization/learn.html`) — Step-by-step explanations, algorithm pseudocode with live highlighting, and complexity analysis.
+- **Simulation Only Page** (`visualization/index.html`) — Dedicated graph canvas, custom graph editing (add nodes, add edges, drag), BFS playback controls, FIFO queue animation, and real-time traversal output.
+- **Simulation + Learning Mode Page** (`visualization/learn.html`) — Interactive simulation combined with real-time step-by-step plain English explanations, algorithm pseudocode with live execution highlighting, complexity analysis ($O(V+E)$), and Python code reference (`bfs.py`).
 
 To view:
 ```bash
