@@ -1,5 +1,4 @@
-# BFS Algorithm — DAA Assignment 2
-# 
+# BFS Algorithm — # 
 # This project uses only Python standard library modules.
 # No external packages are required.
 #

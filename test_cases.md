@@ -1,7 +1,5 @@
 # BFS Test Cases
-## DAA Assignment 2
-
----
+## --
 
 ## Test Case 1: Default Six-Vertex Graph
 

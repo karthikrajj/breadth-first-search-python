@@ -1,5 +1,5 @@
-# Breadth-First Search (BFS) Algorithm
-## DAA Assignment 2 � Python Implementation
+﻿# Breadth-First Search (BFS) Algorithm
+## Python Implementation & Interactive Visualizer
 
 ---
 
@@ -21,7 +21,7 @@ Breadth-First Search (BFS) traverses a graph by:
 
 ### Pseudocode
 
-`
+```
 BFS(Graph, start):
     visited = {start}
     queue = [start]
@@ -34,7 +34,7 @@ BFS(Graph, start):
             if neighbour is not visited:
                 mark neighbour as visited
                 add neighbour to queue
-`
+```
 
 ### Complexity
 
@@ -42,7 +42,7 @@ BFS(Graph, start):
 |---|---|
 | Time Complexity | O(V + E) |
 | Space Complexity | O(V) |
-| Data Structure | collections.deque (FIFO Queue) |
+| Data Structure | `collections.deque` (FIFO Queue) |
 | Graph Representation | Adjacency List (Dictionary) |
 
 Where V = number of vertices, E = number of edges.
@@ -51,20 +51,20 @@ Where V = number of vertices, E = number of edges.
 
 ## Project Structure
 
-`
+```
 breadth-first-search-python/
-+-- bfs.py                    # Main BFS implementation (Python)
-+-- README.md                 # Project documentation
-+-- algorithm_explanation.md  # Detailed algorithm theory & walkthrough
-+-- test_cases.md             # Test cases & expected outputs
-+-- requirements.txt          # Requirements information
-+-- video_script.md           # 2-minute presentation script
-+-- visualization/            # Interactive BFS visualizer
-    +-- index.html            # Main canvas visualizer page
-    +-- learn.html            # Learning mode & complexity page
-    +-- style.css             # Ember theme stylesheet
-    +-- script.js             # JavaScript visualizer logic
-`
+├── bfs.py                    # Main BFS implementation (Python)
+├── README.md                 # Project documentation
+├── algorithm_explanation.md  # Detailed algorithm theory & walkthrough
+├── test_cases.md             # Test cases & expected outputs
+├── requirements.txt          # Requirements information
+├── video_script.md           # 2-minute presentation script
+└── visualization/            # Interactive BFS visualizer
+    ├── index.html            # Main canvas visualizer page
+    ├── learn.html            # Learning mode & complexity page
+    ├── style.css             # Ember theme stylesheet
+    └── script.js             # JavaScript visualizer logic
+```
 
 ---
 
@@ -72,19 +72,19 @@ breadth-first-search-python/
 
 ### Prerequisites
 - Python 3.6 or higher
-- No external libraries required (uses only standard library collections.deque)
+- No external libraries required (uses only standard library `collections.deque`)
 
 ### Running the Python Implementation
 
-`ash
+```bash
 # Run BFS with interactive menu
 python bfs.py
-`
+```
 
 The program provides three modes:
-1. **Demo Mode** � Runs three pre-built examples (default graph, cyclic graph, disconnected graph).
-2. **Interactive Mode** � Lets you enter a custom graph and starting vertex.
-3. **Both** � Runs demo examples followed by interactive mode.
+1. **Demo Mode** — Runs three pre-built examples (default graph, cyclic graph, disconnected graph).
+2. **Interactive Mode** — Lets you enter a custom graph and starting vertex.
+3. **Both** — Runs demo examples followed by interactive mode.
 
 ---
 
@@ -92,17 +92,17 @@ The program provides three modes:
 
 The project includes an interactive two-page visualizer built with HTML, CSS, and JavaScript:
 
-- **Visualizer Page** (isualization/index.html) � Graph canvas, BFS controls, FIFO queue animation, and traversal output.
-- **Learning Page** (isualization/learn.html) � Step-by-step explanations, algorithm pseudocode with live highlighting, and complexity analysis.
+- **Visualizer Page** (`visualization/index.html`) — Graph canvas, BFS controls, FIFO queue animation, and traversal output.
+- **Learning Page** (`visualization/learn.html`) — Step-by-step explanations, algorithm pseudocode with live highlighting, and complexity analysis.
 
 To view:
-`ash
+```bash
 # Open directly in your browser
 start visualization/index.html
-`
+```
 
 ---
 
 ## License
 
-Academic project � DAA Assignment 2.
+MIT License

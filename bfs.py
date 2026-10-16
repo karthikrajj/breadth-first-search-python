@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 """
 Breadth-First Search (BFS) Algorithm Implementation
-DAA Assignment 2
-
 This program implements the BFS graph traversal algorithm using:
 - Adjacency list representation for the graph
 - collections.deque for efficient queue operations
@@ -318,7 +316,7 @@ def main():
     """
     print("\n" + "*" * 55)
     print("*  Breadth-First Search (BFS) Algorithm")
-    print("*  DAA Assignment 2 — Python Implementation")
+    print("*  Python Implementation")
     print("*" * 55)
     print("\nBFS explores a graph level by level using a FIFO queue.")
     print("Time Complexity: O(V + E) | Space Complexity: O(V)")

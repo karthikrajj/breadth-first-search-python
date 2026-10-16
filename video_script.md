@@ -1,11 +1,9 @@
 # BFS Algorithm — 2-Minute Presentation Script
-## DAA Assignment 2
-
----
+## --
 
 ### Slide 1: Introduction (0:00 – 0:20)
 
-> "Good [morning/afternoon]. My name is [Your Name], and this is my DAA Assignment 2 presentation on the **Breadth-First Search algorithm**, or BFS."
+> "Good [morning/afternoon]. My name is [Your Name], and this is my presentation on the **Breadth-First Search algorithm**, or BFS."
 
 > "BFS is a fundamental graph traversal algorithm. It explores a graph **level by level**, starting from a source vertex, using a **queue** — a First In, First Out data structure."
 

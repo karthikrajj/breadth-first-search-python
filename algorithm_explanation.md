@@ -1,7 +1,5 @@
 # Breadth-First Search (BFS) — Algorithm Explanation
-## DAA Assignment 2
-
----
+## --
 
 ## 1. What is BFS?
 
