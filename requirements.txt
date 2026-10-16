@@ -1,0 +1,8 @@
+# BFS Algorithm — DAA Assignment 2
+# 
+# This project uses only Python standard library modules.
+# No external packages are required.
+#
+# Module used: collections.deque (built-in)
+#
+# Python version: 3.6 or later
